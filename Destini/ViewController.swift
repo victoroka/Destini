@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         topButton.setTitle(currentStory?.firstAnswer, for: .normal)
         bottomButton.setTitle(currentStory?.secondAnswer, for: .normal)
         
-        if currentStory!.index >= 4 {
+        if currentStory?.firstAnswer == nil || currentStory?.secondAnswer == nil {
             topButton.isHidden = true
             bottomButton.isHidden = true
             restartButton.isHidden = false
