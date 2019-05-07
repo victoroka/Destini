@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -60,6 +59,20 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="17E-TM-9cz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH8-ju-Gih">
+                                <rect key="frame" x="26" y="35" width="70" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Ihe-1F-3Yh"/>
+                                    <constraint firstAttribute="height" constant="35" id="sZ1-us-ahF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Restart!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qvc-gt-0Q6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="YYD-qC-cgr" firstAttribute="top" secondItem="u0E-Z6-us4" secondAttribute="bottom" constant="34" id="1pn-V9-Sph"/>
@@ -67,12 +80,14 @@
                             <constraint firstAttribute="trailing" secondItem="u0E-Z6-us4" secondAttribute="trailing" constant="16" id="A5L-N2-gpr"/>
                             <constraint firstItem="u0E-Z6-us4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="H73-ur-bFp"/>
                             <constraint firstItem="amk-E0-c5D" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Hea-Xq-KoH"/>
+                            <constraint firstItem="TH8-ju-Gih" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="15" id="SEF-nW-2bv"/>
                             <constraint firstItem="amk-E0-c5D" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="SOg-Hz-lzD"/>
                             <constraint firstItem="Erf-gv-fGo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="TjW-ZR-YTx"/>
                             <constraint firstItem="amk-E0-c5D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="UWG-Ch-uBS"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="YYD-qC-cgr" secondAttribute="bottom" constant="18" id="Zil-rd-Zl2"/>
                             <constraint firstAttribute="trailing" secondItem="Erf-gv-fGo" secondAttribute="trailing" id="Zqj-Tf-xWO"/>
                             <constraint firstItem="YYD-qC-cgr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="d5M-i4-lR2"/>
+                            <constraint firstItem="TH8-ju-Gih" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="fuT-D3-Jap"/>
                             <constraint firstAttribute="trailing" secondItem="YYD-qC-cgr" secondAttribute="trailing" constant="16" id="mba-eL-D4o"/>
                             <constraint firstItem="u0E-Z6-us4" firstAttribute="top" secondItem="amk-E0-c5D" secondAttribute="bottom" constant="8" id="o7B-8v-9JJ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Erf-gv-fGo" secondAttribute="bottom" id="oHQ-qB-aKu"/>
@@ -80,13 +95,14 @@
                     </view>
                     <connections>
                         <outlet property="bottomButton" destination="YYD-qC-cgr" id="oTr-dl-hKK"/>
+                        <outlet property="restartButton" destination="TH8-ju-Gih" id="V6b-oa-Ciz"/>
                         <outlet property="storyTextView" destination="amk-E0-c5D" id="TU8-d8-Hye"/>
                         <outlet property="topButton" destination="u0E-Z6-us4" id="Dfm-eR-Gan"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="319"/>
+            <point key="canvasLocation" x="288.80000000000001" y="212.74362818590706"/>
         </scene>
     </scenes>
     <resources>
